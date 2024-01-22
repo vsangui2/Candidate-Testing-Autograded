@@ -42,7 +42,6 @@ candidateAnswer = input.question(question);
 for (let i=0; i < questions.length; i++){
   candidateAnswers.push(input.question(questions[i]));
 }
-console.log(candidateAnswers);
 
 function gradeQuiz(candidateAnswers) {
 
@@ -51,11 +50,8 @@ function gradeQuiz(candidateAnswers) {
 for (let j = 0; j < questions.length; j++){
   if (candidateAnswers[j] === correctAnswers[j]) {
   console.log(`Your answer was ${candidateAnswers[j]} and the correct answer is ${correctAnswers[j]}.`);
-} else {
-  console.log("That is incorrect.");
 }
 }
-
   let grade;  //TODO 3.2 use this variable to calculate the candidates score.
 
 
